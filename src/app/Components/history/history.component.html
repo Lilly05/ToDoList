@@ -1,6 +1,6 @@
 <div class="body">
   <h1 class="title">ToDoList</h1>
-  <button mat-raised-button color="accent" class="newItem" (click)="redirect()">Back</button>
+  <button mat-raised-button color="accent" class="backButton" (click)="redirect()">Back</button>
   <div class="list" *ngIf="hasFinished();else emptyList">
     <div *ngFor="let listItem of historyList; index as i" class="listWrapper">
       <mat-card *ngIf="listItem.isDone">

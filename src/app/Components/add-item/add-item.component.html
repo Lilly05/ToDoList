@@ -21,9 +21,9 @@
         <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
-    <div class="buttons">
-        <button (click)="router.navigate(['/'])" mat-raised-button color="accent">Back</button>
-        <button (click)="addItem()" mat-raised-button color="accent">Add</button>
+    <div class="buttonWrapper">
+        <button class="actionButtons" (click)="router.navigate(['/'])" mat-raised-button color="accent">Back</button>
+        <button class="actionButtons" (click)="addItem()" mat-raised-button color="accent">Add</button>
     </div>
     </div>
 </div>

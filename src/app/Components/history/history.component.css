@@ -1,12 +1,20 @@
 mat-card{
   width: 100%;
   margin-top: 25px;
-  background-color: #C4D7F2;
+  background-color: rgb(255,63,128, 0.3);
   align-items: center;
+  background-color: rgb(255,63,128, 0.3);
+  box-shadow: 6px 6px 20px #888888;
+}
+
+.backButton{
+  height: 50px;
+  width: 150px;
 }
 
 button{
   margin: 10px;
+  box-shadow: 4px 4px 20px #888888;
 }
 
 .list{
@@ -21,13 +29,7 @@ button{
 
 .body{
   text-align: center;
-  background-color: #F0F7EE;
   margin: 50px;
-}
-
-.navigationButtons{
-  width: 200px;
-  height: 50px;
 }
 
 a{

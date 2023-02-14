@@ -8,28 +8,38 @@
 
 mat-form-field {
   width: 100%;
+  color: black;
 }
 
 .form {
   width: min(30em, 70%);
 }
 
-.buttons{
+.buttonWrapper{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
 }
 
-button{
-  margin: 15px;
-  width: 30%;
+.title{
+  margin-top: 15px;
+  font-size: 70px;
+  margin-bottom: 50px;
+  text-shadow: 1px 1px 6px #888888;
 }
 
-.title{
-  margin: 0 0 1em 0;
-  font-size: 2rem;
-  text-shadow: 1px 1px 6px #888888;
+.actionButtons{
+  margin: 15px;
+  height: 50px;
+  width: 200px;
+  box-shadow: 4px 4px 20px #888888;
+}
+
+@media only screen and (max-width: 400px){
+  .actionButtons{
+    margin: 5px;
+  }
 }
 
 
