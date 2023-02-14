@@ -9,7 +9,7 @@ mat-form-field{
   width: 50%;
 }
 
-.buttons{
+.navigationButtons{
   flex-direction: row;
 }
 
