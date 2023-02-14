@@ -1,21 +1,21 @@
 <div class="body">
     <span class="title">ToDoList</span>
     <div class="form">
-    <mat-form-field>
+    <mat-form-field appearance="outline">
         <mat-label>Title</mat-label>
         <input matInput [formControl]="formControl" [(ngModel)]="title">
         <mat-error *ngIf="formControl.hasError('required')">
             Please enter a title
         </mat-error>
     </mat-form-field>
-    <mat-form-field>
+    <mat-form-field appearance="outline">
         <mat-label>Description</mat-label>
         <textarea matInput [formControl]="formControl" [(ngModel)]="content"></textarea>
         <mat-error *ngIf="formControl.hasError('required')">
             Please enter a description
         </mat-error>
     </mat-form-field>
-    <mat-form-field appearance="fill">
+    <mat-form-field appearance="outline">
         <mat-label>Due Date</mat-label>
         <input matInput [matDatepicker]="picker" (dateChange)="addEvent($event)">
         <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
