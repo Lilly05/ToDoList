@@ -1,0 +1,19 @@
+<div class="body">
+  <h1 class="title">ToDoList</h1>
+  <button mat-raised-button color="accent" class="newItem" (click)="redirect()">Back</button>
+  <div class="list" *ngIf="hasFinished();else emptyList">
+    <div *ngFor="let listItem of historyList; index as i" class="listWrapper">
+      <mat-card *ngIf="listItem.isDone">
+        <mat-card-header><h1>{{listItem.title}}</h1></mat-card-header>
+        <mat-card-subtitle align="start">completed until {{listItem.date | date: "dd/MM/yyyy"}}</mat-card-subtitle>
+        <mat-card-content>{{listItem.content}}</mat-card-content><mat-card-actions>
+        <button mat-raised-button color="primary" (click)="toggleStatus(i)">Undo</button>
+        <button mat-raised-button color="warn" (click)="delete(i)">Delete</button>
+      </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+  <ng-template #emptyList>
+    <h1 class="emptyList">Nothing's here yet...</h1>
+  </ng-template>
+</div>

@@ -1,0 +1,60 @@
+mat-card{
+  width: 100%;
+  margin-top: 25px;
+  background-color: #C4D7F2;
+  align-items: center;
+}
+
+button{
+  margin: 10px;
+}
+
+.list{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.listWrapper{
+  width: 40%;
+}
+
+.body{
+  text-align: center;
+  background-color: #F0F7EE;
+  margin: 50px;
+}
+
+.newItem{
+  width: 200px;
+  height: 50px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+mat-card-subtitle{
+  margin-left: 10px;
+}
+
+.title{
+  margin-top: 15px;
+  font-size: 70px;
+  margin-bottom: 50px;
+  text-shadow: 1px 1px 6px #888888;
+}
+
+mat-card-actions{
+  margin-left: 15px;
+}
+
+.emptyList{
+  margin-top: 50px;
+}
+
+.dueDatePassed{
+  color: red;
+  font-weight: bold;
+}

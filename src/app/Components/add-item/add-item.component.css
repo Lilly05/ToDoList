@@ -1,0 +1,27 @@
+.body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px;
+}
+
+mat-form-field{
+  width: 50%;
+}
+
+.buttons{
+  flex-direction: row;
+}
+
+button{
+  margin: 15px;
+}
+
+.title{
+  margin-top: 15px;
+  font-size: 70px;
+  margin-bottom: 50px;
+  text-shadow: 1px 1px 6px #888888;
+}
+
+
