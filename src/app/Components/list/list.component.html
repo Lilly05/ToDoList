@@ -1,7 +1,7 @@
 <div class="body">
 <h1 class="title">ToDoList</h1>
   <button mat-raised-button color="accent" class="navigationButtons" (click)="router.navigate(['/add-item'])">Add Item</button>
-  <button mat-raised-button color="accent" class="navigationButtons" (click)="router.navigate(['/history'])">History</button>
+  <button mat-raised-button color="accent" class="navigationButtons" (click)="router.navigate(['/completed'])">Completed</button>
 <div class="list" *ngIf="hasUnfinished();else emptyList">
   <div *ngFor="let listItem of list; index as i" class="listWrapper">
   <mat-card *ngIf="!listItem.isDone">

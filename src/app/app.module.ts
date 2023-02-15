@@ -16,7 +16,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {DateAdapter, MatNativeDateModule} from "@angular/material/core";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatTableModule} from "@angular/material/table";
-import { HistoryComponent } from './Components/history/history.component';
+import { CompletedComponent } from './Components/completed/completed.component';
 
 
 @NgModule({
@@ -24,7 +24,7 @@ import { HistoryComponent } from './Components/history/history.component';
     AppComponent,
     ListComponent,
     AddItemComponent,
-    HistoryComponent,
+    CompletedComponent,
   ],
   imports: [
     BrowserModule,

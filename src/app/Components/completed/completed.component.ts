@@ -4,10 +4,10 @@ import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-history',
-  templateUrl: './history.component.html',
-  styleUrls: ['./history.component.css']
+  templateUrl: './completed.component.html',
+  styleUrls: ['./completed.component.css']
 })
-export class HistoryComponent implements OnInit{
+export class CompletedComponent implements OnInit{
 
   historyList: ToDoListItem[] = []
 
