@@ -9,7 +9,6 @@ export class ManageListService{
     if (ls !== null){
       this.list = JSON.parse(ls);
       this.list.map(item => item.date = new Date(item.date))
-      console.log(this.list)
     }
   }
 

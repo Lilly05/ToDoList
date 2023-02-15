@@ -33,7 +33,7 @@ export class ListComponent implements OnInit{
 
   isDueDatePassed(index: number): boolean{
     let today: Date = new Date();
-    return this.list[index].date < today
+    return new Date(this.list[index].date.toDateString()) < new Date(today.toDateString())
   }
 
 }

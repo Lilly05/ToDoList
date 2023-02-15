@@ -17,16 +17,15 @@ export class AddItemComponent {
   dateValue: Date | null = null;
   formControl = new FormControl('', [Validators.required]);
 
-  constructor(private manageList: ManageListService, private dateatapter: DateAdapter<Date>, public router: Router) {
-    this.dateatapter.setLocale('de-CH')
+  constructor(private manageList: ManageListService, private dateAdapter: DateAdapter<Date>, public router: Router) {
+    this.dateAdapter.setLocale('de-CH')
   }
   addEvent(date: MatDatepickerInputEvent<Date>) {
     this.dateValue = date.value;
-    console.log(this.dateValue)
   }
 
   addItem(){
-    if (this.title === undefined || this.content === undefined || this.dateValue === undefined || this.dateValue === null){
+    if (!this.title || !this.content || !this.dateValue){
       return;
     }else{
       this.manageList.addItem({title: this.title, content: this.content, date: this.dateValue, isDone: false})
